@@ -29,6 +29,9 @@ def main():
         prediction = model.predict(transformed_text)[0]
         output = "Result: This tweet is " + prediction + ("😄" if prediction == 'positive' else "☹️")
         st.write(output)
+    st.markdown("<h3>Code</h3>", unsafe_allow_html=True)
+    st.markdown('You can view the code by clicking on the [link](https://github.com/AksharGoyal/Twitter-Sentiment-Analysis).', unsafe_allow_html=True)
+    st.markdown('Link to the app: https://github.com/AksharGoyal/Twitter-Sentiment-Analysis', unsafe_allow_html=True)
     
 if __name__ == '__main__':
   main()
